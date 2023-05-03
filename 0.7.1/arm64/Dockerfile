@@ -2,7 +2,7 @@ FROM alpine as tools
 WORKDIR /compose
 RUN apk update && apk add wget && \
     wget https://github.com/tindy2013/stairspeedtest-reborn/releases/download/v0.7.1/stairspeedtest_reborn_arm64.tar.gz && \
-    tar xf stairspeedtest_reborn_linux64.tar.gz && \
+    tar xf stairspeedtest_reborn_arm64.tar.gz && \
     wget https://raw.githubusercontent.com/We1eVen/stairspeedtest-docker/master/webgui.sh -O stairspeedtest/webgui.sh && \
     mv stairspeedtest/tools/gui/gui.html stairspeedtest/tools/gui/index.html
 
