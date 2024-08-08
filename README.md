@@ -55,3 +55,21 @@ weleven11/stairspeedtest-reborn
 其中，`/path/to/pref.ini`替换为你自己的配置文件路径
 
 *注意：若同时修改环境变量与配置文件中的线程数，则使用配置文件中指定的线程数。若修改二者其中之一，则使用修改值。*
+
+## 使用docker-compose
+
+```
+git clone https://github.com/We1eVen/stairspeedtest-docker
+cd stairspeedtest-docker
+docker compose up -d
+```
+
+---
+
+# 构建
+
+```
+git clone https://github.com/We1eVen/stairspeedtest-docker
+cd stairspeedtest-docker
+docker buildx build --platform linux/amd64,linux/arm64 .
+```
