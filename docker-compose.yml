@@ -1,6 +1,6 @@
 services:
   stairspeedtest-reborn:
-    image: weleven11/stairspeedtest-reborn:0.7.2-modify
+    image: weleven11/stairspeedtest-reborn
     container_name: stairspeedtest-reborn
     ports: 
       - "65430:65430"
