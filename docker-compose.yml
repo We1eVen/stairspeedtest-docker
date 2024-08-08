@@ -1,0 +1,14 @@
+services:
+  stairspeedtest-reborn:
+    image: weleven11/stairspeedtest-reborn:0.7.2-modify
+    container_name: stairspeedtest-reborn
+    ports: 
+      - "65430:65430"
+    volumes:
+#      - "$PWD/pref.ini:/speedtest/pref.ini"
+      - "$PWD/results:/speedtest/results"
+    environment:
+      - PORT=65430
+      - MAXFORKS=2
+      - THREAD=4
+    restart: unless-stopped
